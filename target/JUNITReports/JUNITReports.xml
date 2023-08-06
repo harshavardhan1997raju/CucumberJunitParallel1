@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="21.9" tests="4" skipped="0" failures="1" errors="0">
+<testcase classname="Accounts page" name="Account Page Launch" time="9.468">
+<system-out><![CDATA[
+Given User has already logged in to application.............................passed
+Given Users on accounts page................................................passed
+Then user get accounts section..............................................passed
+And account selection count is 5............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Login Page" time="8.051">
+<system-out><![CDATA[
+Given user is on login page.................................................passed
+And I verify title should be "Login - My Shop"..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Login Page Title Validation" time="6.552">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.LoginSteps.i_verify_title_should_be(LoginSteps.java:23)
+	at ✽.I verify title should be "Login - My Show"(file:///C:/Users/manoh/CucumberProjects/cucumber1/cucumberPOM2/src/test/resources/appFeatures/loginPage.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user is on login page.................................................passed
+And I verify title should be "Login - My Show"..............................failed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Launch Login" time="7.025">
+<system-out><![CDATA[
+Given user is on login page.................................................passed
+And I enter the emailid "automationharsha7@gmail.com".......................passed
+Then I enter Password "Test@123"............................................passed
+And I click on submit.......................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
